@@ -111,6 +111,26 @@ npm run dev
 npm run build
 ```
 
+## 🚀 Cách sử dụng
+
+1. **Khởi động ứng dụng**:
+   ```bash
+   npm run dev
+   ```
+
+2. **Truy cập ứng dụng**: Mở browser và vào `http://localhost:5173`
+
+3. **Test đăng nhập**:
+   - Email: `eve.holt@reqres.in`
+   - Password: bất kỳ (ví dụ: `password123`)
+
+4. **Các tính năng có thể test**:
+   - ✅ Đăng nhập với credentials hợp lệ
+   - ✅ Thử đăng nhập với email sai (để xem error handling)
+   - ✅ Refresh page sau khi đăng nhập (test persistence)
+   - ✅ Truy cập route được bảo vệ khi chưa đăng nhập
+   - ✅ Đăng xuất và test redirect
+
 ## 📚 Học hỏi từ code này
 
 ### For Beginners:
@@ -132,3 +152,14 @@ npm run build
 Sử dụng reqres.in để demo:
 - `POST /api/login` - Đăng nhập
 - `GET /api/users/1` - Validate token (mock)
+
+### 🔑 Test Credentials
+
+Để test ứng dụng, sử dụng credentials sau:
+
+```
+Email: eve.holt@reqres.in
+Password: bất kỳ (ví dụ: password123)
+```
+
+**Lưu ý**: API reqres.in chỉ validate email, password có thể là bất kỳ giá trị nào.
